@@ -32,7 +32,7 @@ class DeleteCookieError(CookiePoolError):
         return repr("Delete Cookie Error")
 
 
-class GetRandomCooieError(CookiePoolError):
+class GetRandomCookieError(CookiePoolError):
     def __str__(self):
         return repr("Get Random Cooke Error")
 
@@ -42,9 +42,14 @@ class GetAllCookieError(CookiePoolError):
         return repr("Get All Cookie Error")
 
 
-class SetAccoutError(CookiePoolError):
+class SetAccountError(CookiePoolError):
     def __str__(self):
         return repr("Set Accout Error")
+
+
+class GetAccountError(CookiePoolError):
+    def __str__(self):
+        return repr('Get Account Error')
 
 
 class DeleteAccountError(CookiePoolError):
@@ -52,9 +57,9 @@ class DeleteAccountError(CookiePoolError):
         return repr('Delete Account Error')
 
 
-class GetAccountError(CookiePoolError):
+class GetRandomAccountError(CookiePoolError):
     def __str__(self):
-        return repr('Get Account Error')
+        return repr("Get Random Account Error")
 
 
 class GetAllAccountError(CookiePoolError):
